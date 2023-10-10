@@ -1,0 +1,14 @@
+.tarefaX {
+    padding-bottom: 20px;
+    width: 800px;
+    height: 45px;
+}
+
+label {
+
+    width: 800px;
+    height: 45px;
+    color: #FFF;
+    background: rgba(78, 97, 166, 0.50);
+
+}
