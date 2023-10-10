@@ -7,9 +7,9 @@ const Adicionar = () => {
         console.log("TAREFA CRIADA")
     }
     return (
-        <div>Adicionar
-            <div className={style.tarefa}>
-                <input type="text" placeholder='Nome da tarefa'></input>
+        <div>
+            <div className={style.divtarefa} >
+                <input className={style.tarefa} type="text" placeholder='Nome da tarefa'></input>
 
                 <Button text='+ Adicionar' click={() => {
                     CriaTarefa()
@@ -17,8 +17,8 @@ const Adicionar = () => {
                 }}></Button>
             </div>
 
-            <div className={style.linha}>
-                <img src={line} alt='Linha azul separando o título do botão'></img>
+            <div >
+                <img className={style.linha} src={line} alt='Linha azul separando o título do botão'></img>
             </div>
         </div>
     )
