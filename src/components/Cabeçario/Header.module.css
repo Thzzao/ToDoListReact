@@ -1,0 +1,9 @@
+.titulo {
+    flex-direction: column;
+    color: #FFF;
+    text-align: center;
+    font-family: Spinnaker;
+    font-size: 28px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
