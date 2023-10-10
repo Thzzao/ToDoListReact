@@ -1,32 +1,8 @@
-/* #root {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 2rem;
-    text-align: center;
+.container {
+    position: unset;
 }
 
- */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    padding: 0px 111px;
-    justify-content: center;
-    align-items: center;
-    background: #000;
-}
-
-h1 {
-    padding-bottom: 50px;
-}
-
+/* 
 .task {
     display: flex;
 }
@@ -69,4 +45,4 @@ img {
     width: 980px;
     padding-top: 20px;
     padding-bottom: 20px;
-}
+} */
