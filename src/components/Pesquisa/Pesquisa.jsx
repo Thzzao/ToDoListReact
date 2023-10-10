@@ -6,7 +6,7 @@ const Pesquisa = () => {
     // }
 
     return (
-        <div>
+        <div className={style.div}>
             <input className={style.pesquisa} type='text' placeholder='Pesquisar uma tarefa'></input>
         </div>
     )
