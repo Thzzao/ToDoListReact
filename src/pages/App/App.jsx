@@ -2,7 +2,7 @@ import style from '../App/app.module.css'
 import { Header } from '../../components/Cabeçario/Header'
 import Pesquisa from '../../components/Pesquisa/Pesquisa'
 import Tarefa from '../../components/Tarefa/Tarefa'
-import Footer from '../../components/Rodapé/Footer'
+// import Footer from '../../components/Rodapé/Footer'
 import Adicionar from '../../components/Adicionar/Adicionar'
 
 
@@ -13,7 +13,7 @@ function App() {
             <Adicionar />
             <Pesquisa />
             <Tarefa />
-            <Footer />
+            {/* <Footer /> */}
         </div>
     )
 }
