@@ -1,10 +1,29 @@
+import style from "../Tarefa/Tarefa.module.css"
 
 const Tarefa = () => {
     return (
-
-        <div className='tarefa'>
-            {/* <label>{tarefa}</label> */}
-        </div>
+        <>
+            <div className={style.tarefaX}>
+                {/* <label>{tarefa}</label> */}
+                <label>TAREFAAA</label>
+            </div>
+            <div className={style.tarefaX}>
+                {/* <label>{tarefa}</label> */}
+                <label>TAREFAAA</label>
+            </div>
+            <div className={style.tarefaX}>
+                {/* <label>{tarefa}</label> */}
+                <label>TAREFAAA</label>
+            </div>
+            <div className={style.tarefaX}>
+                {/* <label>{tarefa}</label> */}
+                <label>TAREFAAA</label>
+            </div>
+            <div className={style.tarefaX}>
+                {/* <label>{tarefa}</label> */}
+                <label>TAREFAAA</label>
+            </div>
+        </>
 
     )
 }
