@@ -1,5 +1,26 @@
-.tarefa {}
+.divtarefa {
+    padding-top: 35px;
+    display: flex;
+    align-items: center;
+}
 
-/* Criar button de tamanho diferente */
+.tarefa {
+    width: 500px;
+    height: 45px;
+    border: none;
+    padding: 8px;
+    border-radius: 7px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background: rgba(78, 97, 166, 0.50);
+    font-family: Open Sans;
+    font-size: 24px;
+    color: #FFF;
+}
 
-.linha {}
+/* Criar button com heigh de 45, border radios de 7 e width de 250px + 50 px de espaçamento = 300 */
+
+.linha {
+    width: 800px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
