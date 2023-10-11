@@ -1,4 +1,4 @@
-.tarefaX {
+.tarefa {
     padding-bottom: 20px;
     width: 800px;
     height: 45px;
@@ -9,6 +9,34 @@ label {
     width: 800px;
     height: 45px;
     color: #FFF;
-    background: rgba(78, 97, 166, 0.50);
+    /* background: rgba(78, 97, 166, 0.50); */
+}
 
+/* VER COMO FUNCIONA A ESTILIZAÇÃO DO CHECKBOX */
+/* label span {
+    color: #fff;
+} */
+
+label input:checked+span {
+    text-decoration: line-through;
+    color: #ffffff80;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff91;
+}
+
+.checkbox input::after {
+    background-color: rgb(255, 0, 0);
+}
+
+.checkbox input::before {
+    background-color: rgb(9, 255, 0);
+}
+
+
+.listagem {
+    background-color: #c389ca;
 }
