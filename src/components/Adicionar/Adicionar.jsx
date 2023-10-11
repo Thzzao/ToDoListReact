@@ -11,9 +11,8 @@ const Adicionar = () => {
             <div className={style.divtarefa} >
                 <input className={style.tarefa} type="text" placeholder='Nome da tarefa'></input>
 
-                <Button text='+ Adicionar' click={() => {
+                <Button text='+ Adicionar' width='250px' height='45px' borderRadius='7px' click={() => {
                     CriaTarefa()
-                    // Criar dois botões de tamanhos diferentes
                 }}></Button>
             </div>
 
