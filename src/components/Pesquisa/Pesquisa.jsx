@@ -1,13 +1,11 @@
+/* eslint-disable react/prop-types */
 import style from "../Pesquisa/Pesquisa.module.css"
 
-const Pesquisa = () => {
-
-    // function PesquisaTarefa(){
-    // }
+const Pesquisa = ({ pesquisa, setPesquisa }) => {
 
     return (
         <div className={style.div}>
-            <input className={style.pesquisa} type='text' placeholder='Pesquisar uma tarefa'></input>
+            <input className={style.pesquisa} type='text' value={pesquisa} onChange={(e) => setPesquisa(e.target.value)} placeholder='Pesquisar uma tarefa'></input>
         </div>
     )
 }
