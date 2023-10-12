@@ -1,5 +1,5 @@
 .div {
-    padding-bottom: 20px;
+    padding-bottom: 25px;
 }
 
 .pesquisa {
@@ -8,9 +8,9 @@
     border: none;
     border-radius: 7px;
     border: 1px solid rgba(0, 0, 0, 0.10);
-    background: rgba(78, 97, 166, 0.50);
+    background: rgba(78, 97, 166, 0.40);
     padding: 8px;
     font-family: Open Sans;
-    font-size: 24px;
+    font-size: 20px;
     color: #FFF;
 }
