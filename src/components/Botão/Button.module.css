@@ -1,5 +1,6 @@
 button {
     font-family: Spinnaker;
+    transition: .3s;
 }
 
 button:hover {

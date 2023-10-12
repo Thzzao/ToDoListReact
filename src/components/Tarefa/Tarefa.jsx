@@ -1,9 +1,11 @@
+/* eslint-disable react/prop-types */
+// import { useState } from "react"
 import { useState } from "react"
 import style from "../Tarefa/Tarefa.module.css"
+// import Adicionar from "../Adicionar/Adicionar"
 
 
 const Tarefa = () => {
-
     const [tarefas, setTarefas] = useState([
         {
             id: 1,
@@ -27,19 +29,21 @@ const Tarefa = () => {
         },
     ])
 
+
     return (
         <>
             <div className={style.listagem}>
                 {tarefas.map((tarefa) => (
-                    <div className="tarefa">
+                    <div key={tarefa.id} className="tarefa">
                         <div className="content">
                             <p>{tarefa.text}</p>
                         </div>
                     </div>
+                    // 
                 ))}
                 <div>
-                    <img onClick="" src="\src\assets\bin.svg"></img>
-                    <img onClick="" src="\src\assets\cil_pen.svg"></img>
+                    <img className={style.excluir} onClick="" src="\src\assets\bin.svg"></img>
+                    <img className={style.editar} onClick="" src="\src\assets\cil_pen.svg"></img>
                     <p><label><input type="checkbox" className={style.checkbox} /><span>XXXXXXX</span></label></p>
                 </div>
             </div>
