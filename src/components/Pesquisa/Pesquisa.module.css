@@ -2,6 +2,12 @@
     padding-bottom: 25px;
 }
 
+input:focus,
+input:active {
+    outline: none;
+    border: 1px solid blue;
+}
+
 .pesquisa {
     width: 800px;
     height: 45px;
