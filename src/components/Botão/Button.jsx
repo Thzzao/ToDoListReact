@@ -9,7 +9,7 @@ function Button({ text, click, color, border, height, width, backgroundColor, bo
         width: width || "350px",
         backgroundColor: backgroundColor || " #4031EC",
         borderRadius: borderRadius || "15px",
-        fontSize: "26px",
+        fontSize: "23px",
 
     }
 
