@@ -1,19 +1,15 @@
-import style from '../App/app.module.css'
 import { Header } from '../../components/Cabeçario/Header'
-// import Pesquisa from '../../components/Pesquisa/Pesquisa'
+import style from '../App/app.module.css'
 import Tarefa from '../../components/Tarefa/Tarefa'
-// import Footer from '../../components/Rodapé/Footer'
-// import Adicionar from '../../components/Adicionar/Adicionar'
+import Footer from '../../components/Rodapé/Footer'
 
 
 function App() {
     return (
         <div className={style.container}>
             <Header />
-            {/* <Adicionar /> */}
-            {/* <Pesquisa /> */}
             <Tarefa />
-            {/* <Footer /> */}
+            <Footer />
         </div>
     )
 }
