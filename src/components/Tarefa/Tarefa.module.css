@@ -1,31 +1,114 @@
-.tarefa {
-    padding-bottom: 20px;
-    width: 800px;
-    height: 45px;
+.divtarefa {
+    padding-top: 35px;
+    display: flex;
+    align-items: center;
 }
+
+.tarefa {
+    width: 530px;
+    height: 45px;
+    border: none;
+    padding: 8px;
+    border-radius: 7px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background: rgba(78, 97, 166, 0.40);
+    font-family: Open Sans;
+    font-size: 20px;
+    color: #FFF;
+    margin-right: 20px;
+}
+
+.linha {
+    width: 800px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.listagem {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+}
+
+.boxtarefa {
+    display: flex;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+.box {
+    width: 800px;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background-color: rgba(78, 97, 166, 0.65);
+    padding-left: 12px;
+    display: flex;
+    border-radius: 7px;
+}
+
 
 label {
-
+    display: flex;
+    align-items: center;
     width: 800px;
     height: 45px;
-    color: #FFF;
-    /* background: rgba(78, 97, 166, 0.50); */
 }
-
-/* VER COMO FUNCIONA A ESTILIZAÇÃO DO CHECKBOX */
-/* label span {
-    color: #fff;
-} */
 
 label input:checked+span {
     text-decoration: line-through;
     color: #ffffff80;
 }
 
+span {
+    padding-left: 20px;
+    font-family: Open Sans;
+    font-size: 18px;
+    color: #FFF;
+
+}
+
+/* AFASTAR MAIS ELE DA BORDA */
+
+.excluir {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+    width: 23px;
+    height: 28px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.excluir img {
+    width: 23px;
+    height: 28px;
+
+}
+
+.editar {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    background-color: #000;
+    border: none;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+}
+
+.editar img {
+    width: 32px;
+    height: 31px;
+}
+
+
+/* VER COMO FUNCIONA A ESTILIZAÇÃO DO CHECKBOX */
 .checkbox {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     background-color: #ffffff91;
+    cursor: pointer;
 }
 
 .checkbox input::after {
@@ -37,6 +120,17 @@ label input:checked+span {
 }
 
 
-.listagem {
-    background-color: #c389ca;
+/* BARRA DE ROLAGEM */
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgba(0, 53, 243, 0.25);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(21, 21, 21);
+    border-radius: 20px;
+    border: 1px solid rgb(73, 73, 73);
 }
