@@ -19,22 +19,18 @@ const Tarefa = () => {
         {
             id: 1,
             text: "Arrumar o quarto",
-            isCompleted: false,
         },
         {
             id: 2,
             text: "Estudar",
-            isCompleted: false,
         },
         {
             id: 3,
             text: "Terminar o projeto da faculdade",
-            isCompleted: false,
         },
         {
             id: 4,
             text: "Ir treinar",
-            isCompleted: false,
         },
     ])
 
@@ -43,7 +39,6 @@ const Tarefa = () => {
         {
             id: Math.floor(Math.random() * 10000),
             text: text,
-            isCompleted: false,
         },
         ]
         setTarefas(newTarefa)
@@ -52,6 +47,12 @@ const Tarefa = () => {
     function excluirTarefa(id) {
         setTarefas(tarefas.filter(tarefa => tarefa.id !== id))
     }
+
+    function editarTarefa() {
+        // setValue(e.target.value)
+    }
+
+    const [pesquisa, setPesquisa] = useState("")
 
     return (
         <>
@@ -68,24 +69,27 @@ const Tarefa = () => {
                     <img className={style.linha} src={line} alt='Linha azul separando o título do botão'></img>
                 </div>
 
-                <Pesquisa />
+                <Pesquisa pesquisa={pesquisa} setPesquisa={setPesquisa} />
 
             </form>
             <div className={style.listagem}>
                 {
-                    tarefas.map((tarefa) => (
+                    tarefas.filter((tarefa) => tarefa.text.toLowerCase().includes(pesquisa.toLowerCase())).map((tarefa) => (
                         <div key={tarefa.id} className={style.boxtarefa} >
                             <div className={style.box}>
-                                <label><input type="checkbox" className={style.checkbox} /><span>{tarefa.text}</span>
-                                </label>
+                                <label><input type="checkbox" className={style.checkbox} /><span>{tarefa.text}</span></label>
 
                                 <button className={style.excluir} onClick={() => {
                                     excluirTarefa(tarefa.id)
-                                }}><img onClick="" src="\src\assets\bin.svg"></img>
+                                }}><img src="\src\assets\bin.svg"></img>
                                 </button>
                             </div>
 
-                            <button className={style.editar}><img onClick="" src="\src\assets\cil_pen.svg"></img></button>
+                            <button className={style.editar} onClick={() => {
+
+                                editarTarefa()
+
+                            }} ><img src="\src\assets\cil_pen.svg"></img></button>
                         </div>
                     ))}
             </div>
