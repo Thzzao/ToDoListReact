@@ -1,35 +1,23 @@
 .container {
-    position: unset;
-}
-
-/* 
-.task {
+    width: 98vw;
+    height: 100vh;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
 }
 
-button {
-    width: 180px;
-    height: 45px;
-    border-radius: 10px;
-
+/* BARRA DE ROLAGEM */
+body::-webkit-scrollbar {
+    width: 8px;
 }
 
-input {
-
+body::-webkit-scrollbar-track {
+    background: rgba(0, 53, 243, 0.25);
 }
 
-label {
-    width: 8000px;
-    height: 405px;
-    border-radius: 10px;
-    border: none;
-    border-radius: 7px;
-    border: 1px solid rgba(0, 0, 0, 0.10);
-    background: rgba(78, 97, 166, 0.35);
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(21, 21, 21);
+    border-radius: 20px;
+    border: 1px solid rgb(73, 73, 73);
 }
-
-img {
-    width: 980px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-} */
