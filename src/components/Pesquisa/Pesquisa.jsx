@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import style from "../Pesquisa/Pesquisa.module.css"
 
 const Pesquisa = ({ pesquisa, setPesquisa }) => {
