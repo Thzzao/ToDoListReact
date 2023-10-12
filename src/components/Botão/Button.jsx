@@ -1,6 +1,5 @@
 import "./Button.module.css"
 
-
 function Button({ text, click, color, border, height, width, backgroundColor, borderRadius }) {
     const styleDefault = {
         color: color || "#FFF",
@@ -10,7 +9,6 @@ function Button({ text, click, color, border, height, width, backgroundColor, bo
         backgroundColor: backgroundColor || " #4031EC",
         borderRadius: borderRadius || "15px",
         fontSize: "23px",
-
     }
 
     return (
