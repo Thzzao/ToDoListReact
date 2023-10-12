@@ -33,6 +33,7 @@ const Tarefa = () => {
 
     const addTarefa = (text) => {
         if (text.length < 3) {
+            // Criar um alerta "Não é possível criar uma tarefa vazia. Tente novamente!"
             return
         } else {
             const newTarefa = [...tarefas,
