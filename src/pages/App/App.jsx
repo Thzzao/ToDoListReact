@@ -1,7 +1,6 @@
 import { Header } from '../../components/Cabeçario/Header'
 import style from '../App/app.module.css'
 import Tarefa from '../../components/Tarefa/Tarefa'
-import Footer from '../../components/Rodapé/Footer'
 
 
 function App() {
@@ -9,7 +8,6 @@ function App() {
         <div className={style.container}>
             <Header />
             <Tarefa />
-            <Footer />
         </div>
     )
 }
