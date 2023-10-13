@@ -1,6 +1,6 @@
 import Button from "../Botão/Button"
 import Pesquisa from "../Pesquisa/Pesquisa"
-import line from "../../assets/Line 1.svg"
+import line from "../../../public/Line 1.svg"
 import style from '../Adicionar/adicionar.module.css'
 
 const Adicionar = ({ handleSubmit, value, setValue, addTarefa, pesquisa, setPesquisa }) => {

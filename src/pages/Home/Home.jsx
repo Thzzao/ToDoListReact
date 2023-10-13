@@ -2,7 +2,7 @@ import { Header } from '../../components/Cabeçario/Header'
 import { useNavigate } from 'react-router-dom'
 import style from '../Home/home.module.css'
 import Button from "../../components/Botão/Button"
-import line from "../../assets/Line 1.svg"
+import line from "../../../public/Line 1.svg"
 import Footer from '../../components/Rodapé/Footer'
 
 const Home = () => {

@@ -12,13 +12,13 @@ const BoxTarefa = ({ excluirTarefa, editarTarefa, text, id }) => {
 
                 <button className={style.excluir} onClick={() => {
                     excluirTarefa(id)
-                }}><img src="\src\assets\bin.svg"></img>
+                }}><img src="/bin.svg"></img>
                 </button>
             </div>
 
             <button className={style.editar} onClick={() => {
                 editarTarefa()
-            }} ><img src="\src\assets\cil_pen.svg"></img></button>
+            }} ><img src="/cil_pen.svg"></img></button>
         </div>
     )
 }
