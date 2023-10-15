@@ -32,8 +32,9 @@ const Tarefa = () => {
     ])
 
     const addTarefa = (text) => {
+
         if (text.length < 3) {
-            // Criar um alerta "Não é possível criar uma tarefa vazia. Tente novamente!"
+            alert("Não é possível cadastrar uma tarefa com menos de 3 caracteres.\nTente novamente")
             return
         } else {
             const newTarefa = [...tarefas,
@@ -52,11 +53,17 @@ const Tarefa = () => {
         setTarefas(tarefas.filter(tarefa => tarefa.id !== id))
     }
 
-    const editarTarefa = () => {
-        //fazer a edição usando o estado (se true return um input)
+    // const [editarText, setEditarText] = useState(null)
+    // const [editar, setEditar] = useState("")
 
-
-    }
+    // const editarTarefa = (id) => {
+    //     const atualizarTarefas = [...tarefas].map(tarefa =>{
+    //         if(tarefa.id === id){
+    //             tarefa.text=editarText
+    //         }
+    //         return tarefa
+    //     })
+    // }
 
     return (
         <>
@@ -65,8 +72,9 @@ const Tarefa = () => {
             <div className={style.listagem}>
                 {
                     tarefas.filter((tarefa) => tarefa.text.toLowerCase().includes(pesquisa.toLowerCase())).map((tarefa) => (
-                        <BoxTarefa key={tarefa.id} excluirTarefa={excluirTarefa} editarTarefa={editarTarefa} text={tarefa.text} id={tarefa.id} />
-                    ))}
+                        <BoxTarefa key={tarefa.id} excluirTarefa={excluirTarefa} text={tarefa.text} id={tarefa.id} />
+                    ))
+                }
             </div>
         </>
     )
