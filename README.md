@@ -78,6 +78,7 @@ Local:  http://localhost:5173/
 
 Agredecimentos especiais a todos que me ajudaram nesse projeto:
 
+[João]([https://github.com/Jhosh-Christopher](https://github.com/Joa1zin)) <br/>
 [Jhoshuan](https://github.com/Jhosh-Christopher) <br/>
 [Juliene](https://github.com/JulieneCarneiro) <br/>
 [Victor](https://github.com/Vimlm)
