@@ -4,7 +4,7 @@
 
 Projeto de uma lista de tarefas desenvolvido com a linguagem de programação **JavaScript** com ajuda da biblioteca **React** e o construtor de aplicativos web **Vite**.
 
-[Link da lista de tarefas online]()
+[Link da lista de tarefas online](https://listadetarefas-resilia.vercel.app/)
 
 [Link do protótipo do sistema no Figma](https://www.figma.com/file/h61QV9MmxwWZnd2n1Wft46/Lista-de-tarefas---React?type=design&node-id=0%3A1&mode=dev)
 
