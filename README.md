@@ -17,6 +17,8 @@ Essa lista de tarefas tem as seguintes funcionalidades:
 - [x] Pesquisar tarefa
 - [x] Editar tarefa
 - [x] Marcar tarefa como concluída
+<!--- [x] Uso do local storage 
+- [x] Responsividade -->
 
 ## Requisitos 🚦
 
