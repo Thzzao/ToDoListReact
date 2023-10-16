@@ -1,12 +1,12 @@
 # Lista de Tarefas 📋✔️
 
+[Link da lista de tarefas online](https://listadetarefas-resilia.vercel.app/)
+
+[Link do protótipo do sistema desenvolvido no Figma](https://www.figma.com/file/h61QV9MmxwWZnd2n1Wft46/Lista-de-tarefas---React?type=design&node-id=0%3A1&mode=dev)
+
 ## Apresentação 🚀
 
 Projeto de uma lista de tarefas desenvolvido com a linguagem de programação **JavaScript** com ajuda da biblioteca **React** e o construtor de aplicativos web **Vite**.
-
-[Link da lista de tarefas online](https://listadetarefas-resilia.vercel.app/)
-
-[Link do protótipo do sistema no Figma](https://www.figma.com/file/h61QV9MmxwWZnd2n1Wft46/Lista-de-tarefas---React?type=design&node-id=0%3A1&mode=dev)
 
 ## Funcionalidades ✅
 
@@ -17,8 +17,10 @@ Essa lista de tarefas tem as seguintes funcionalidades:
 - [x] Pesquisar tarefa
 - [x] Editar tarefa
 - [x] Marcar tarefa como concluída
-<!--- [x] Uso do local storage 
-- [x] Responsividade -->
+
+<!-- Foi desenvolvida a **responsividade** da página, onde é possível acessar o aplicativo por meio do desktop, tablet ou celular. <br/>
+
+Nela também se faz presente o uso da API de armazenamento DOM chamada de **Web Storage**, que permite o armazenamento de dados nos dispositivos dos usuários através do navegador web. -->
 
 ## Requisitos 🚦
 
@@ -58,7 +60,7 @@ No terminal do VS Code:
   npm i
 ```
 
-- **Inicie o projeto:**
+- **Inicie o projeto com o comando:**
 
 ```bash
   npm run dev
@@ -83,6 +85,9 @@ Agredecimentos especiais a todos que me ajudaram nesse projeto:
 [João](https://github.com/Joa1zin) <br/>
 [Jhoshuan](https://github.com/Jhosh-Christopher) <br/>
 [Juliene](https://github.com/JulieneCarneiro) <br/>
+
+<!-- [Leonardo]() <br/> -->
+
 [Victor](https://github.com/Vimlm)
 
 ## Autor ✏️
