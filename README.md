@@ -22,6 +22,14 @@ Essa lista de tarefas tem as seguintes funcionalidades:
 
 Nela também se faz presente o uso da API de armazenamento DOM chamada de **Web Storage**, que permite o armazenamento de dados nos dispositivos dos usuários através do navegador web. -->
 
+## Uso 🕵️
+
+- É possível adicionar uma nova tarefa escrevendo o nome dela na caixa de entrada e pressionando "Enter" ou dando um click no botão "+ Adicionar"
+- Use a caixa de pesquisa para filtrar uma tarefa específica.
+- Quando uma tarefa for concluída, clique no checkbox à esquerda do título da tarefa em questão.
+- Para editar uma tarefa basta clicar no ícone de lápis e reescrever sua tarefa. Após, é só apertar "Enter" para realizar a alteração.
+- Clicando na lixeira à direita de alguma tarefa você acaba por excluír aquele afazer.
+
 ## Requisitos 🚦
 
 Para usar o sistema, certifique-se de ter as seguintes tecnologias instaladas em seu computador.
