@@ -1,7 +1,9 @@
 import { useState } from "react"
+import { toast } from "react-toastify"
 import style from "../Tarefa/Tarefa.module.css"
 import Adicionar from "../Adicionar/Adicionar"
 import BoxTarefa from "../BoxTarefa/BoxTarefa"
+
 
 const Tarefa = () => {
     const [value, setValue] = useState("")
@@ -34,7 +36,7 @@ const Tarefa = () => {
     const addTarefa = (text) => {
 
         if (text.length < 3) {
-            alert("Não é possível cadastrar uma tarefa com menos de 3 caracteres.\nTente novamente")
+            toast.warning("Não é possível cadastrar uma tarefa com menos de 2 caracteres!")
             return
         } else {
             const newTarefa = [...tarefas,
