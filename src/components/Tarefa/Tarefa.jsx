@@ -3,6 +3,8 @@ import { toast } from "react-toastify"
 import style from "../Tarefa/Tarefa.module.css"
 import Adicionar from "../Adicionar/Adicionar"
 import BoxTarefa from "../BoxTarefa/BoxTarefa"
+import { Editar } from "../Editar/Editar"
+
 
 
 const Tarefa = () => {
@@ -39,13 +41,13 @@ const Tarefa = () => {
             toast.warning("Não é possível cadastrar uma tarefa com menos de 2 caracteres!")
             return
         } else {
-            const newTarefa = [...tarefas,
+            const novaTarefa = [...tarefas,
             {
                 id: Math.floor(Math.random() * 10000),
                 text: text,
             },
             ]
-            setTarefas(newTarefa)
+            setTarefas(novaTarefa)
         }
     }
 
@@ -55,17 +57,13 @@ const Tarefa = () => {
         setTarefas(tarefas.filter(tarefa => tarefa.id !== id))
     }
 
-    // const [editarText, setEditarText] = useState(null)
-    // const [editar, setEditar] = useState("")
+    const editarTarefa = (id) => {
+        setTarefas(tarefas.map(tarefa => tarefa.id === id ? { ...tarefa, emEdicao: !tarefa.emEdicao } : tarefa))
+    }
 
-    // const editarTarefa = (id) => {
-    //     const atualizarTarefas = [...tarefas].map(tarefa =>{
-    //         if(tarefa.id === id){
-    //             tarefa.text=editarText
-    //         }
-    //         return tarefa
-    //     })
-    // }
+    const editarTask = (task, id) => {
+        setTarefas(tarefas.map(tarefa => tarefa.id === id ? { ...tarefa, task, emEdicao: !tarefa.emEdicao } : tarefa))
+    }
 
     return (
         <>
@@ -74,7 +72,12 @@ const Tarefa = () => {
             <div className={style.listagem}>
                 {
                     tarefas.filter((tarefa) => tarefa.text.toLowerCase().includes(pesquisa.toLowerCase())).map((tarefa) => (
-                        <BoxTarefa key={tarefa.id} excluirTarefa={excluirTarefa} text={tarefa.text} id={tarefa.id} />
+
+                        tarefa.emEdicao ? (
+                            <Editar key={tarefa.id} editarTarefa={editarTask} task={tarefa} />
+                        ) : (
+                            <BoxTarefa key={tarefa.id} excluirTarefa={excluirTarefa} editarTarefa={editarTarefa} text={tarefa.text} id={tarefa.id} />
+                        )
                     ))
                 }
             </div>
