@@ -1,23 +1,12 @@
 import { useEffect, useState } from "react"
 import { toast } from "react-toastify"
-import style from "../Tarefa/Tarefa.module.css"
+import { Editar } from "../Editar/Editar"
 import Adicionar from "../Adicionar/Adicionar"
 import BoxTarefa from "../BoxTarefa/BoxTarefa"
-import { Editar } from "../Editar/Editar"
-
-
+import style from "../Tarefa/Tarefa.module.css"
 
 const Tarefa = () => {
-
-    const [value, setValue] = useState("")
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        if (!value) return;
-        setValue("")
-    }
-
-    const [tarefas, setTarefas] = useState([
+    const data = [
         {
             id: 1,
             text: "Arrumar o quarto",
@@ -34,11 +23,32 @@ const Tarefa = () => {
             id: 4,
             text: "Ir treinar",
         },
-    ])
+    ]
 
-    useEffect(() => { }, [tarefas])
+    // Implementação do localStorage
+    useEffect(() => {
+        const dataLocalStorage = JSON.parse(localStorage.getItem("tarefas"));
+        if (dataLocalStorage) {
+            setTarefas(dataLocalStorage);
+        }
+    }, []);
+    const [tarefas, setTarefas] = useState(() => {
+        const dataLocalStorage = JSON.parse(localStorage.getItem("tarefas"));
+        return dataLocalStorage || data;
+    });
+    useEffect(() => {
+        localStorage.setItem("tarefas", JSON.stringify(tarefas));
+    }, [tarefas]);
+
+    const [value, setValue] = useState("")
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if (!value) return;
+        setValue("")
+    }
+
     const addTarefa = (text) => {
-
         if (text.length < 3) {
             toast.warning("Não é possível cadastrar uma tarefa com menos de 2 caracteres!")
             return
@@ -47,8 +57,8 @@ const Tarefa = () => {
             {
                 id: Math.floor(Math.random() * 10000),
                 text: text,
-            },
-            ]
+            },]
+            localStorage.getItem
             setTarefas(novaTarefa)
         }
     }
@@ -68,11 +78,8 @@ const Tarefa = () => {
             setTarefas(tarefas.map(tarefa => tarefa.id === id ? { id: tarefa.id, text: task, emEdicao: !tarefa.emEdicao } : tarefa))
         } else {
             setTarefas(tarefas.map(tarefa => tarefa.id === id ? { id: tarefa.id, text: tarefa.text, emEdicao: !tarefa.emEdicao } : tarefa))
-
         }
-
     }
-
     return (
         <>
             <Adicionar handleSubmit={handleSubmit} value={value} setValue={setValue} addTarefa={addTarefa} pesquisa={pesquisa} setPesquisa={setPesquisa} />
@@ -80,7 +87,6 @@ const Tarefa = () => {
             <div className={style.listagem}>
                 {
                     tarefas.filter((tarefa) => tarefa.text.toLowerCase().includes(pesquisa.toLowerCase())).map((tarefa) => (
-
                         tarefa.emEdicao ? (
                             <Editar key={tarefa.id} editarTarefa={editarTask} task={tarefa} />
                         ) : (
