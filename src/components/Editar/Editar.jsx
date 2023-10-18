@@ -4,7 +4,7 @@ import Button from "../Botão/Button"
 
 
 export const Editar = ({ editarTarefa, task }) => {
-    const [value, setValue] = useState(task.task)
+    const [value, setValue] = useState(task.text)
 
     const handleSubmit = (e) => {
         e.preventDefault();
