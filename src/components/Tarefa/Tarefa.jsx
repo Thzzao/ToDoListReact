@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { toast } from "react-toastify"
 import style from "../Tarefa/Tarefa.module.css"
 import Adicionar from "../Adicionar/Adicionar"
@@ -8,6 +8,7 @@ import { Editar } from "../Editar/Editar"
 
 
 const Tarefa = () => {
+
     const [value, setValue] = useState("")
 
     const handleSubmit = (e) => {
@@ -35,6 +36,7 @@ const Tarefa = () => {
         },
     ])
 
+    useEffect(() => { }, [tarefas])
     const addTarefa = (text) => {
 
         if (text.length < 3) {
@@ -62,7 +64,13 @@ const Tarefa = () => {
     }
 
     const editarTask = (task, id) => {
-        setTarefas(tarefas.map(tarefa => tarefa.id === id ? { ...tarefa, task, emEdicao: !tarefa.emEdicao } : tarefa))
+        if (task) {
+            setTarefas(tarefas.map(tarefa => tarefa.id === id ? { id: tarefa.id, text: task, emEdicao: !tarefa.emEdicao } : tarefa))
+        } else {
+            setTarefas(tarefas.map(tarefa => tarefa.id === id ? { id: tarefa.id, text: tarefa.text, emEdicao: !tarefa.emEdicao } : tarefa))
+
+        }
+
     }
 
     return (
