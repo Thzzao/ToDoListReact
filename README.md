@@ -18,9 +18,9 @@ Essa lista de tarefas tem as seguintes funcionalidades:
 - [x] Editar tarefa
 - [x] Marcar tarefa como concluída
 
-<!-- Foi desenvolvida a **responsividade** da página, onde é possível acessar o aplicativo por meio do desktop, tablet ou celular. <br/>
+Foi desenvolvida a **responsividade** da página, onde é possível acessar o aplicativo por meio do desktop, tablet ou celular. <br/>
 
-Nela também se faz presente o uso da API de armazenamento DOM chamada de **Web Storage**, que permite o armazenamento de dados nos dispositivos dos usuários através do navegador web. -->
+Nela também se faz presente o uso da API de armazenamento DOM chamada de **Web Storage**, que permite o armazenamento de dados nos dispositivos dos usuários através do navegador web.
 
 ## Uso 🕵️
 
@@ -42,10 +42,12 @@ Para usar o sistema, certifique-se de ter as seguintes tecnologias instaladas em
 
 Abra seu terminal e execute os comandos a seguir:
 
-- **Clone o projeto:**
+- **Clone o repositório usando a `URL` do projeto **OU** a chave `SSH` no terminal:**
 
 ```bash
-  git clone git@github.com:Thzzao/ToDoListResilia.git
+URL: git clone https://github.com/Thzzao/ToDoListResilia.git
+
+SSH: git clone git@github.com:Thzzao/ToDoListResilia.git
 ```
 
 - **Entre na pasta do projeto:**
@@ -68,7 +70,7 @@ No terminal do VS Code:
   npm i
 ```
 
-- **Inicie o projeto com o comando:**
+- **Inicie o sistema com o comando:**
 
 ```bash
   npm run dev
@@ -79,6 +81,10 @@ No terminal do VS Code:
 ```bash
 Local:  http://localhost:5173/
 ```
+
+## Contribuição 💡
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.
 
 ## Referências 🔍
 
@@ -93,9 +99,7 @@ Agredecimentos especiais a todos que me ajudaram nesse projeto:
 [João](https://github.com/Joa1zin) <br/>
 [Jhoshuan](https://github.com/Jhosh-Christopher) <br/>
 [Juliene](https://github.com/JulieneCarneiro) <br/>
-
-<!-- [Leonardo]() <br/> -->
-
+[Leonardo](https://github.com/LeoCosta-dev) <br/>
 [Victor](https://github.com/Vimlm)
 
 ## Autor ✏️
