@@ -10,7 +10,6 @@ function Button({ text, click, color, border, height, width, backgroundColor, bo
         borderRadius: borderRadius || "15px",
         fontSize: "23px",
     }
-
     return (
         <button
             style={styleDefault}
