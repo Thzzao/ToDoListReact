@@ -33,14 +33,13 @@ const StylesTarefa = styled.div`
     > .tarefa {
         width: 530px;
         height: 45px;
-        /* border: none; */
         padding: 8px;
         border-radius: 7px;
-        border: 1px solid rgba(0, 0, 0, 0.10);
-        background: rgba(78, 97, 166, 0.40);
+        border: 1px solid ${(props) => props.theme.preto};
+        background: ${(props) => props.theme.azulClaro};
         font-family: Open Sans;
         font-size: 20px;
-        color: #FFF;
+        color: ${(props) => props.theme.branco};
         margin-right: 20px;
     }
 `

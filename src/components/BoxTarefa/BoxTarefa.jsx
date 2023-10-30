@@ -36,7 +36,7 @@ const StyleBoxTarefa = styled.div`
 
     > .desativado {
         transition: .3s;
-        background-color: rgba(78, 97, 166, 0.20);
+        background-color: ${(props) => props.theme.azulEscuro};
     }
     
     > .editar {
@@ -58,8 +58,8 @@ const StyleBoxTarefa = styled.div`
 const StyleBox = styled.div`
     width: 800px;
     align-items: center;
-    border: 1px solid rgba(0, 0, 0, 0.10);
-    background-color: rgba(78, 97, 166, 0.65);
+    border: 1px solid ${(props) => props.theme.preto};
+    background-color: ${(props) => props.theme.azulClaroForte};
     padding-left: 12px;
     display: flex;
     border-radius: 7px;

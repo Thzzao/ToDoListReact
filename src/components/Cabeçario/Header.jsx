@@ -10,7 +10,7 @@ export const Header = () => {
 
 const StyleTitulo = styled.div`
     > h1{
-        color: #FFF;
+        color: ${(props) => props.theme.branco};
         text-align: center;
         font-family: Spinnaker;
         font-size: 3rem;
