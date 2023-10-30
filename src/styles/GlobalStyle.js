@@ -11,7 +11,7 @@ body,
 :root {
     width: 100%;
     min-height: 100vh;
-    background: #111;
+    background: ${(props) => props.theme.backgroundPage};
 }
 
 /* BARRA DE ROLAGEM */
@@ -20,13 +20,13 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-    background: rgba(0, 53, 243, 0.30);
+    background: ${(props) => props.theme.azulBarraRolagem};
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: rgb(21, 21, 21);
+    background-color: ${(props) => props.theme.pretoBarraRolagem};
     border-radius: 20px;
-    border: 1px solid rgb(73, 73, 73);
+    border: 1px solid ${(props) => props.theme.sombraBarraRolagem};
 }
 
 button {
@@ -67,14 +67,14 @@ span {
     padding-left: 20px;
     font-family: Open Sans;
     font-size: 18px;
-    color: #FFF;
+    color: ${(props) => props.theme.branco};
     width: 700px;
     overflow-wrap: break-word;
 }
 
 footer {
     text-align: center;
-    color: rgba(255, 255, 255, 0.25);
+    color: ${(props) => props.theme.sombraFooter};
     font-family: Open Sans;
     font-size: 18px;
 }
