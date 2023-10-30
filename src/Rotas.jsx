@@ -3,7 +3,7 @@ import Home from './pages/Home/Home'
 import App from './pages/App/App'
 import { GlobalStyle } from './styles/GlobalStyle'
 import { ThemeProvider } from 'styled-components'
-import { TemaDark } from './styles/Temas'
+import { TemaDark, TemaLight } from './styles/Temas'
 
 const Rotas = () => {
     return (
