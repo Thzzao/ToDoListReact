@@ -90,6 +90,7 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar
 
 - [Vite](https://vitejs.dev/guide/)
 - [NodeJS](https://nodejs.org/en)
+- [React Styled Components](https://styled-components.com/docs)
 - [React Router Dom](https://www.npmjs.com/package/react-router-dom) (versão 6)
 
 ## Agredecimentos 🤝
