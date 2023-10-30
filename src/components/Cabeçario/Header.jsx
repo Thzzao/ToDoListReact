@@ -1,9 +1,22 @@
-import style from './Header.module.css'
+import styled from "styled-components"
 
 export const Header = () => {
     return (
-        <div className={style.titulo}>
+        <StyleTitulo>
             <h1>LISTA DE TAREFAS</h1>
-        </div>
+        </StyleTitulo>
     )
 }
+
+const StyleTitulo = styled.div`
+    > h1{
+        color: #FFF;
+        text-align: center;
+        font-family: Spinnaker;
+        font-size: 3rem;
+        font-weight: 400;
+        padding-bottom: 10px;
+        padding-top: 20px;
+        width: fit-content;
+    }
+`

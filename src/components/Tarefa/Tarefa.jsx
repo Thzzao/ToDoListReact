@@ -1,11 +1,9 @@
-import { useEffect, useState } from "react"
-import { toast } from "react-toastify"
-import style from "../Tarefa/Tarefa.module.css"
 import Adicionar from "../Adicionar/Adicionar"
 import BoxTarefa from "../BoxTarefa/BoxTarefa"
+import { useEffect, useState } from "react"
+import { toast } from "react-toastify"
 import { Editar } from "../Editar/Editar"
-
-
+import { StyleListagem } from "./tarefa.style"
 
 const Tarefa = () => {
 
@@ -77,7 +75,7 @@ const Tarefa = () => {
         <>
             <Adicionar handleSubmit={handleSubmit} value={value} setValue={setValue} addTarefa={addTarefa} pesquisa={pesquisa} setPesquisa={setPesquisa} />
 
-            <div className={style.listagem}>
+            <StyleListagem>
                 {
                     tarefas.filter((tarefa) => tarefa.text.toLowerCase().includes(pesquisa.toLowerCase())).map((tarefa) => (
 
@@ -88,7 +86,7 @@ const Tarefa = () => {
                         )
                     ))
                 }
-            </div>
+            </StyleListagem>
         </>
     )
 }

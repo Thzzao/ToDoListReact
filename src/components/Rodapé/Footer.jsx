@@ -1,11 +1,17 @@
-import style from './Footer.module.css'
+import styled from 'styled-components'
 
 const Footer = () => {
     return (
-        <div className={style.rodape}>
+        <StyleRodape>
             <footer>by Thzzao</footer>
-        </div>
+        </StyleRodape>
     )
 }
 
 export default Footer
+
+const StyleRodape = styled.div`
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+`

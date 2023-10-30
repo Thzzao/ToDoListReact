@@ -1,4 +1,3 @@
-import "./Button.module.css"
 
 function Button({ text, click, color, border, height, width, backgroundColor, borderRadius }) {
     const styleDefault = {
@@ -12,10 +11,7 @@ function Button({ text, click, color, border, height, width, backgroundColor, bo
     }
 
     return (
-        <button
-            style={styleDefault}
-            onClick={click}
-        >{text}</button>
+        <button style={styleDefault} onClick={click}>{text}</button>
     )
 }
 
